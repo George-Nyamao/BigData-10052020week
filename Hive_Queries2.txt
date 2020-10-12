@@ -71,9 +71,7 @@ hive> create database joinsdb;
 
 hive> use joinsdb;
 
-hive> create table emp(id int, name string,sal int, gender string, dno int)
-      row format delimited 
-      fields terminated by ',';
+hive> create table emp(id int, name string,sal int, gender string, dno int) row format delimited fields terminated by ',';
 
 hive> load data local inpath '/home/pylearn2018/datasets/emp1' into table emp;
 
